@@ -1,1 +1,72 @@
+#Shanghaihai {
+  float: left;
+  margin-right: 10px;  
+  width: 350px;  
+  height: 300px;
+}
 
+#FlagFootball {
+  float: right;
+  margin-left: 10px;  
+  width: 350px;  
+  height: 300px;
+}
+
+#DreamInstitute {
+  float: left;
+  margin-right: 10px;  
+  width: 350px;  
+  height: 300px;
+}
+
+
+a:link {
+  color: #F0AEA1;
+  text-decoration: none;
+  text-shadow: .5px .5px 1px #f0c4a0;
+}
+
+a:visited {
+  color: #A0786F;
+  text-decoration: none;
+  text-shadow: .5px .5px 1px #f0c4a0;
+}
+
+a:hover {
+  color: #f7a87a;
+}
+
+a:active,
+ a:focus {
+  color: #c86a4d;
+}
+
+.borderd_text {
+  -webkit-text-stroke: 2px #f886cee0;
+  font-size: 48px;
+  color: #f3846e;
+  text-shadow:
+    0 0 5px #f886cee0,
+    0 0 10px #f886cee0,
+    0 0 20px #f886cee0,
+    0 0 40px #f886cee0,
+    0 0 80px #f886cee0;
+}
+
+body {
+    margin: 0;
+  }
+
+html {
+  background-color: #f3dcdd;
+}
+
+header.page-header {
+  background: #f7c5b8;
+  padding: 2rem 1rem;
+}
+
+header.page-header h1,
+header.page-header h2 {
+  margin: 0;
+}
