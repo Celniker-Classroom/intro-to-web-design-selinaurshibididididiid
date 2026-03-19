@@ -1,67 +1,32 @@
-/*stuff w/ images*/
-#Shanghaihai {
-  float: left;
-  margin-right: 15px;  
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-#FlagFootball {
-  float: right;
-  margin-left: 15px;  
+html {
+  background-color: #f3dcdd;
 }
 
-#DreamInstitute {
-  float: left;
-  margin-right: 15px;  
+.container {
+  width: 1100px;          
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-/*images*/
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+header.page-header {
+  background: #f7c5b8;
+  padding: 2rem 1rem;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.bordered_image {
-  border: 5px dashed #f7c5b8;
-  border-radius: 20px;
-  max-width: 100%;
-  height: auto;
+header.page-header h1,
+header.page-header h2 {
+  margin: 0;
 }
 
-.bordered_image:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
-}
-
-/*stuff w/ the links*/
-a:link {
-  color: #f065bd;
-  text-decoration: none;
-  text-shadow: 1px 1px 2px #ab548b;
-}
-
-a:visited {
-  color: #A0786F;
-  text-decoration: none;
-  text-shadow: 1px 1px 2px #624d48; 
-}
-
-a:hover {
-  color: #f7a87a;
-  text-decoration: none;
-  text-shadow: 1px 1px 2px #c78660
-}
-
-a:active,
- a:focus {
-  color: #c86a4d;
-}
-
-a {
-  transition: color 0.4s ease;
-}
-
-/*content and body*/
 .bordered_text {
   -webkit-text-stroke: 2px #f886cee0;
   font-size: 48px;
@@ -74,27 +39,12 @@ a {
     0 0 80px #f886cee0;
 }
 
-body {
-    margin: 0;
-    font-family: 'Arial', Helvetica, sans-serif;
-  }
-
-.content-section {
-  display: flex;
-  justify-content: center; 
-  align-items: center;     
-  gap: 15px;
-  flex-wrap: wrap;     
-  padding: 10px 0;
-  overflow: hidden; 
-  background: #fff5f3;
-  border-radius: 10px;
-  padding: 15px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.content-section img {
-  flex-shrink: 0;
+h3 {
+  color: #f065bd;
+  text-shadow: 2px 2px 4px #ab548b;
+  font-size: 30px;
+  padding: 5px;
+  clear: both;
 }
 
 p {
@@ -104,72 +54,83 @@ p {
   letter-spacing: 0.5px;
 }
 
-h3{
+.content-section {
+  padding: 15px;
+  overflow: hidden;
+  background: #fff5f3;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.side-image {
+  float: left;
+  width: 30%;
+  margin-right: 15px;
+}
+
+.side-image.right {
+  float: right;
+  margin-left: 15px;
+  margin-right: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.bordered_image {
+  border: 5px dashed #f7c5b8;
+  border-radius: 20px;
+}
+
+.bordered_image:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+a:link {
   color: #f065bd;
-  text-shadow: 2px 2px 4px #ab548b;
-  font-size: 30px;
-  padding: 5px;
-  clear:both;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px #ab548b;
 }
 
-html {
-  background-color: #f3dcdd;
+a:visited {
+  color: #A0786F;
+  text-shadow: 1px 1px 2px #624d48;
 }
 
-header.page-header {
-  background: #f7c5b8;
-  padding: 2rem 1rem;
-  text-align: center;  
-  width: 100%;
-  box-sizing: border-box;
+a:hover {
+  color: #f7a87a;
+  text-shadow: 1px 1px 2px #c78660;
 }
 
-header.page-header h1,
-header.page-header h2 {
-  margin: 0;
+a:active,
+a:focus {
+  color: #c86a4d;
 }
 
-.container {
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-/*media queries*/
-@media (max-width: 2560px) {
-  .container { width: 90%; }
-
-  #Shanghaihai,
-  #FlagFootball,
-  #DreamInstitute {
-    float: none;
-    width: 90%;
-    height: auto;
-    margin: 10px auto;
-  }
+a {
+  transition: color 0.4s ease;
 }
 
 @media (max-width: 992px) {
-  .container { width: 90%; }
-  #Shanghaihai,
-  #FlagFootball,
-  #DreamInstitute {
+  .container {
+    width: 95%;
+  }
+
+  .side-image,
+  .side-image.right {
     float: none;
-    width: 90%;
-    height: auto;
+    width: 100%;
     margin: 10px 0;
   }
 }
 
-@media (max-width: 768px) {
-  .content-section {
-    flex-direction: column;
-    align-items: center;
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
   }
 }
-
-
-
-
